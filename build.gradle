@@ -1,5 +1,6 @@
 plugins {
     id 'java-library'
+    id 'java-test-fixtures'
     id 'com.github.sherter.google-java-format' version '0.9'
 }
 
@@ -8,10 +9,32 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://maven.pkg.github.com/montealegreluis/activity-feed")
+        credentials {
+            username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+            password = project.findProperty("gpr.token") ?: System.getenv("TOKEN")
+        }
+    }
+    maven {
+        url = uri("https://maven.pkg.github.com/montealegreluis/service-buses")
+        credentials {
+            username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+            password = project.findProperty("gpr.token") ?: System.getenv("TOKEN")
+        }
+    }
 }
 
 dependencies {
+    implementation "io.vavr:vavr:0.10.4"
+    api 'com.montealegreluis:service-buses:1.0.0'
+    api 'com.montealegreluis:activity-feed:3.1.1'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'org.mockito:mockito-core:4.2.0'
+    testImplementation 'org.mockito:mockito-inline:4.2.0'
+    testImplementation testFixtures('com.montealegreluis:activity-feed:3.1.1')
+    testImplementation testFixtures('com.montealegreluis:service-buses:1.0.0')
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
