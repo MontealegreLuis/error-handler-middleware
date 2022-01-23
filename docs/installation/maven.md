@@ -55,4 +55,4 @@ Add the following entry to your `dependencies` in your project's `pom.xml` file.
 </dependency>
 ```
 
-Please find what the latest version is [here](https://github.com/MontealegreLuis/error-handler-middleware/packages/1188930).
+Please find what the latest version is [here](https://github.com/MontealegreLuis/error-handler-middleware/packages/1211516).
