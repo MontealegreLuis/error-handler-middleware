@@ -8,10 +8,10 @@ import com.montealegreluis.activityfeed.ContextSerializer;
 import com.montealegreluis.servicebuses.Action;
 import com.montealegreluis.servicebuses.commandbus.Command;
 import com.montealegreluis.servicebuses.commandbus.CommandHandler;
-import com.montealegreluis.servicebuses.commandbus.CommandMiddleware;
+import com.montealegreluis.servicebuses.commandbus.middleware.CommandMiddleware;
 import io.vavr.control.Try;
 
-public final class CommandErrorHandlerMiddleware implements CommandMiddleware<Command> {
+public final class CommandErrorHandlerMiddleware implements CommandMiddleware {
   private final ActivityFeed feed;
   private final ContextSerializer serializer;
 

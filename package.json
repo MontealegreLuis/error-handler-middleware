@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install",
+    "commitlint": "commitlint --edit \"$1\""
   },
   "dependencies": {
     "@commitlint/cli": "16.0.2",

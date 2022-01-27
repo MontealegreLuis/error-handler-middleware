@@ -1,7 +1,7 @@
 # Error Handler Middleware
 
 [![CI workflow](https://github.com/montealegreluis/error-handler-middleware/actions/workflows/ci.yml/badge.svg)](https://github.com/montealegreluis/error-handler-middleware/actions/workflows/ci.yml)
-[![Release workflow](https://github.com/montealegreluis/error-handler-middleware/actions/workflows/release.yml/badge.svg)](https://github.com/montealegreluis/activity-feed/actions/workflows/release.yml)
+[![Release workflow](https://github.com/montealegreluis/error-handler-middleware/actions/workflows/release.yml/badge.svg)](https://github.com/montealegreluis/error-handler-middleware/actions/workflows/release.yml)
 [![semantic-release: conventional-commits](https://img.shields.io/badge/semantic--release-conventionalcommits-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
 Error Handler Middleware for [Command and Query buses](https://github.com/MontealegreLuis/service-buses).

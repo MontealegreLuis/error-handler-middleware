@@ -1,4 +1,4 @@
-# Contributing to Activity Feed
+# Contributing to Error Handler Middleware
 
 ## Code of Conduct
 
@@ -49,7 +49,7 @@ The following commands can be used to perform the initial checkout of Service Bu
 
 ```bash
 git clone git://github.com/MontealegreLuis/error-handler-middleware.git
-cd activity-feed
+cd error-handler-middleware
 ```
 
 Retrieve Service Buses dependencies using [Gradle](https://docs.gradle.org/current/userguide/userguide.html):
