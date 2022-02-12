@@ -4,6 +4,8 @@
 [![Release workflow](https://github.com/montealegreluis/error-handler-middleware/actions/workflows/release.yml/badge.svg)](https://github.com/montealegreluis/error-handler-middleware/actions/workflows/release.yml)
 [![semantic-release: conventional-commits](https://img.shields.io/badge/semantic--release-conventionalcommits-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
+## This package has been deprecated in favor of [_this package_](https://github.com/MontealegreLuis/service-buses-middleware).
+
 Error Handler Middleware for [Command and Query buses](https://github.com/MontealegreLuis/service-buses).
 
 It logs and re-throws exceptions, so they can be classified in two main groups `DomainException`s and `InfrastructureException`s.
